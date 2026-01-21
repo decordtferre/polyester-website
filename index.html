@@ -1,17 +1,340 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>POL.YESTER – DJ & Events</title>
-  <meta name="description" content="DJ voor trouwfeesten, privéfeesten en clubs in provincie Antwerpen.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neon-modern DJ voor trouwfeesten, privéfeesten, clubs en verjaardagen in provincie Antwerpen." />
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Open Graph (mooie preview bij delen) -->
+  <meta property="og:title" content="POL.YESTER – DJ & Events" />
+  <meta property="og:description" content="Neon-modern DJ voor trouwfeesten, privéfeesten, clubs en verjaardagen in provincie Antwerpen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-cover.jpg" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Decorative background -->
+  <div class="bg">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="glow g3"></div>
+    <div class="grid"></div>
+  </div>
 
-  <h1>POL.YESTER</h1>
-  <p>DJ & Events</p>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="POL.YESTER home">
+      <span class="brand-mark">P</span>
+      <span class="brand-text">POL.YESTER</span>
+    </a>
 
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span class="menu-lines"></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#about">Over</a>
+      <a href="#services">Diensten</a>
+      <a href="#gallery">Foto’s</a>
+      <a href="#contact" class="nav-cta">Boekingen</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="pill">
+            <span class="dot"></span>
+            Provincie Antwerpen • Open-format • Neon modern
+          </p>
+
+          <h1 class="headline">
+            POL.YESTER
+            <span class="headline-sub">DJ & Events</span>
+          </h1>
+
+          <p class="subhead">
+            Van privéfeesten en verjaardagen tot trouwfeesten en clubs — strak gemixt, volledig op jouw publiek afgestemd.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Check beschikbaarheid</a>
+            <a class="btn ghost" href="#gallery">Bekijk sfeer</a>
+          </div>
+
+          <div class="quick">
+            <div class="quick-card">
+              <div class="quick-title">Genres</div>
+              <div class="quick-value">Open-format / party / house / classics</div>
+            </div>
+            <div class="quick-card">
+              <div class="quick-title">Regio</div>
+              <div class="quick-value">Antwerpen + omstreken</div>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a class="icon-btn" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <!-- Instagram icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.8A5.2 5.2 0 1 1 6.8 14 5.2 5.2 0 0 1 12 8.8zm0 2A3.2 3.2 0 1 0 15.2 14 3.2 3.2 0 0 0 12 10.8zM17.7 6.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+              </svg>
+            </a>
+
+            <a class="icon-btn" href="https://soundcloud.com/" target="_blank" rel="noreferrer" aria-label="SoundCloud">
+              <!-- SoundCloud-ish icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 12.5v6a1 1 0 0 1-2 0v-6a1 1 0 0 1 2 0zm3-2v8a1 1 0 0 1-2 0v-8a1 1 0 0 1 2 0zm3-4v12a1 1 0 0 1-2 0v-12a1 1 0 0 1 2 0zm2.5 6.5a4.5 4.5 0 0 1 4.5-4.5c2.485 0 4.5 2.015 4.5 4.5S21.485 17 19 17h-4a1 1 0 0 1-1-1v-3z"/>
+              </svg>
+            </a>
+
+            <a class="icon-btn" href="https://tiktok.com/" target="_blank" rel="noreferrer" aria-label="TikTok">
+              <!-- Simple note icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3v10.2a4.8 4.8 0 1 1-4-4.7V11a2.8 2.8 0 1 0 2 2.7V3h2zm2 0a5.7 5.7 0 0 0 4 2v2a7.7 7.7 0 0 1-4-1.2V3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="poster">
+            <div class="poster-glow"></div>
+            <div class="poster-inner">
+              <div class="poster-top">
+                <div class="tag">LIVE SETS</div>
+                <div class="tag">PRIVATE • WEDDINGS • CLUBS</div>
+              </div>
+
+              <!-- Zet hier jouw hero-foto -->
+              <img class="poster-img" src="images/hero.jpg" alt="POL.YESTER DJ live" />
+
+              <div class="poster-bottom">
+                <div class="stat">
+                  <div class="stat-num">⚡</div>
+                  <div class="stat-text">Neon modern vibe</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">🎛️</div>
+                  <div class="stat-text">Pro setup</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">🗺️</div>
+                  <div class="stat-text">Antwerpen</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-note">
+            <strong>Tip:</strong> vervang <code>images/hero.jpg</code> en <code>images/og-cover.jpg</code> door je eigen visuals voor een instant pro look.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Over POL.YESTER</h2>
+          <p class="section-text">
+            POL.YESTER is een open-format DJ-act met een neon moderne sound en een scherp gevoel voor crowd-reading.
+            Of het nu een trouwfeest is, een privéfeest, een clubnacht of een verjaardag: de set wordt live opgebouwd op energie en vibe.
+          </p>
+
+          <div class="chips">
+            <span class="chip">Trouwfeesten</span>
+            <span class="chip">Privéfeesten</span>
+            <span class="chip">Clubs</span>
+            <span class="chip">Verjaardagen</span>
+            <span class="chip">Bedrijfsevents</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Snelle info</h3>
+          <ul class="list">
+            <li><span>Regio</span><span>Provincie Antwerpen</span></li>
+            <li><span>Stijl</span><span>Neon modern / Open-format</span></li>
+            <li><span>Set</span><span>Op maat van publiek</span></li>
+            <li><span>Boekbaar</span><span>Feesten & events</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Diensten</h2>
+        <p class="section-text subtle">
+          Kies een formule, of laat me jouw event briefen — ik stem alles af op locatie, tijdstip en publiek.
+        </p>
+
+        <div class="cards">
+          <article class="service">
+            <h3>DJ Set</h3>
+            <p>Open-format sets voor clubs, privéfeesten, verjaardagen en bedrijfsevents.</p>
+            <div class="service-meta">✓ Opbouw in fases • ✓ Requests • ✓ Crowd-reading</div>
+          </article>
+
+          <article class="service">
+            <h3>Trouwfeest</h3>
+            <p>Van receptie tot dansvloer: een flow die werkt voor alle leeftijden.</p>
+            <div class="service-meta">✓ Intro & openingsdans • ✓ Classics → party • ✓ Planning call</div>
+          </article>
+
+          <article class="service">
+            <h3>Licht & geluid</h3>
+            <p>Professionele uitstraling met een clean neon look (afhankelijk van locatie).</p>
+            <div class="service-meta">✓ Compact of full setup • ✓ Afspraak op maat</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Foto’s</h2>
+            <p class="section-text subtle">Zet jouw eigen beelden in <code>images/</code> en pas de bestandsnamen hieronder aan.</p>
+          </div>
+          <a class="btn ghost" href="#contact">Boekingen</a>
+        </div>
+
+        <div class="gallery">
+          <a class="shot" href="images/gallery-1.jpg" target="_blank" rel="noreferrer">
+            <img src="images/gallery-1.jpg" alt="DJ setup" />
+          </a>
+          <a class="shot" href="images/gallery-2.jpg" target="_blank" rel="noreferrer">
+            <img src="images/gallery-2.jpg" alt="Crowd" />
+          </a>
+          <a class="shot" href="images/gallery-3.jpg" target="_blank" rel="noreferrer">
+            <img src="images/gallery-3.jpg" alt="Lights" />
+          </a>
+          <a class="shot" href="images/gallery-4.jpg" target="_blank" rel="noreferrer">
+            <img src="images/gallery-4.jpg" alt="Booth" />
+          </a>
+          <a class="shot" href="images/gallery-5.jpg" target="_blank" rel="noreferrer">
+            <img src="images/gallery-5.jpg" alt="Event" />
+          </a>
+          <a class="shot" href="images/gallery-6.jpg" target="_blank" rel="noreferrer">
+            <img src="images/gallery-6.jpg" alt="Club" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Boekingen & contact</h2>
+          <p class="section-text">
+            Stuur me de datum, locatie en type event — ik antwoord zo snel mogelijk met beschikbaarheid en een voorstel.
+          </p>
+
+          <div class="contact-cards">
+            <div class="card small">
+              <div class="k">E-mail</div>
+              <a class="v" href="mailto:jouwemail@voorbeeld.be">jouwemail@voorbeeld.be</a>
+              <div class="hint">Vervang dit in <code>index.html</code></div>
+            </div>
+
+            <div class="card small">
+              <div class="k">Socials</div>
+              <div class="v links">
+                <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://tiktok.com/" target="_blank" rel="noreferrer">TikTok</a>
+                <a href="https://soundcloud.com/" target="_blank" rel="noreferrer">SoundCloud</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="form card" action="https://formsubmit.co/jouwemail@voorbeeld.be" method="POST">
+          <!-- FormSubmit opties -->
+          <input type="hidden" name="_subject" value="Nieuwe booking aanvraag – POL.YESTER" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <h3 class="card-title">Check beschikbaarheid</h3>
+
+          <div class="row">
+            <label>
+              Naam
+              <input name="naam" type="text" placeholder="Jouw naam" required />
+            </label>
+            <label>
+              E-mail
+              <input name="email" type="email" placeholder="jij@voorbeeld.be" required />
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              Datum
+              <input name="datum" type="date" required />
+            </label>
+            <label>
+              Type event
+              <select name="event_type" required>
+                <option value="" disabled selected>Kies…</option>
+                <option>Privéfeest</option>
+                <option>Trouwfeest</option>
+                <option>Club</option>
+                <option>Verjaardag</option>
+                <option>Bedrijfsevent</option>
+                <option>Andere</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Locatie (stad/zaal)
+            <input name="locatie" type="text" placeholder="Antwerpen / Mechelen / …" required />
+          </label>
+
+          <label>
+            Bericht
+            <textarea name="bericht" rows="6" placeholder="Uren, vibe, genre, aantal gasten, speciale wensen…" required></textarea>
+          </label>
+
+          <button class="btn primary full" type="submit">Verstuur</button>
+
+          <p class="form-note">
+            Door te verzenden ga je akkoord dat je bericht via e-mail verstuurd wordt.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="footer-left">
+          <div class="brand small">
+            <span class="brand-mark">P</span>
+            <span class="brand-text">POL.YESTER</span>
+          </div>
+          <p class="subtle">Neon modern DJ • Provincie Antwerpen</p>
+        </div>
+
+        <div class="footer-right subtle">
+          <a href="#top">↑ Naar boven</a>
+          <span>© <span id="year"></span> POL.YESTER</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
