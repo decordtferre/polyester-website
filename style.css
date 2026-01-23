@@ -142,7 +142,6 @@ code{ color: rgba(255,255,255,0.9); }
 }
 .menu-lines::before{ top:0; }
 .menu-lines::after{ bottom:0; }
-.menu-lines{ }
 .menu-lines::before, .menu-lines::after{ transition: 160ms ease; }
 
 /* Hero */
