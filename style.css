@@ -462,30 +462,41 @@ code{ color: rgba(255,255,255,0.9); }
   justify-content:space-between;
   gap: 12px;
 }
+
 .gallery{
   margin-top: 16px;
   display:grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 12px;
 }
+
 .shot{
   grid-column: span 4;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;          /* kies wat je wil, bv 16/9 */
   border-radius: 18px;
-  overflow:hidden;
+  overflow: hidden;
+
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(255,255,255,0.04);
   transition: 160ms ease;
 }
+
 .shot:hover{
   transform: translateY(-2px);
   border-color: rgba(255,255,255,0.18);
 }
-.shot img{
-  width:100%;
-  height: 190px;
+
+/* 1 class voor zowel img als video */
+.shot-media{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display:block;
+  display: block;
 }
+
+
 
 /* Contact */
 .contact-cards{
@@ -616,3 +627,43 @@ input:focus, textarea:focus, select:focus{
   .poster-bottom{ grid-template-columns: 1fr; }
   .gallery .shot{ grid-column: span 12; }
 }
+
+/* Lightbox overlay */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 24px;
+}
+
+.lightbox.hidden{
+  display: none;
+}
+
+.lightbox img,
+.lightbox video{
+  max-width: 70;
+  max-height: 70vh;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(0,255,255,0.25);
+}
+
+/* Close button */
+.lightbox-close{
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.lightbox-close:hover{
+  opacity: 1;
+}
+

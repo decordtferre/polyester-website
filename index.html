@@ -16,6 +16,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox hidden">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" />
+  <video
+  id="lightbox-video"
+  muted
+  autoplay
+  loop
+  playsinline
+  disablepictureinpicture
+  controlslist="nodownload nofullscreen noremoteplayback"
+></video>
+</div>
+
+
 <body>
   <!-- Decorative background -->
   <div class="bg">
@@ -72,15 +88,13 @@
 
           <div class="socials">
             <a class="icon-btn" href="https://instagram.com/pol_yester/" target="_blank" rel="noreferrer" aria-label="Instagram">
-                <img src="images/logo-instagram.png" alt="Instagram" class="icon-img">
+                <img src="images/instagram-white-icon.png" alt="Instagram" class="icon-img">
             </a>
 
 
-            <a class="icon-btn" href="https://soundcloud.com/" target="_blank" rel="noreferrer" aria-label="SoundCloud">
+            <a class="icon-btn" href="https://soundcloud.com/pol_yester/" target="_blank" rel="noreferrer" aria-label="SoundCloud">
               <!-- SoundCloud-ish icon -->
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6 12.5v6a1 1 0 0 1-2 0v-6a1 1 0 0 1 2 0zm3-2v8a1 1 0 0 1-2 0v-8a1 1 0 0 1 2 0zm3-4v12a1 1 0 0 1-2 0v-12a1 1 0 0 1 2 0zm2.5 6.5a4.5 4.5 0 0 1 4.5-4.5c2.485 0 4.5 2.015 4.5 4.5S21.485 17 19 17h-4a1 1 0 0 1-1-1v-3z"/>
-              </svg>
+              <img src="images/soundcloud-white-icon.png" alt="Soundcloud" class="icon-img">
             </a>
           </div>
         </div>
@@ -150,36 +164,50 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">Foto’s</h2>
-          </div>
-        </div>
-
-        <div class="gallery">
-          <a class="shot" href="images/gallery-1.jpg" target="_blank" rel="noreferrer">
-            <img src="images/gallery-1.jpg" alt="DJ setup" />
-          </a>
-          <a class="shot" href="images/crowd.jpg" target="_blank" rel="noreferrer">
-            <img src="images/crowd.JPG" alt="Crowd" />
-          </a>
-          <a class="shot" href="images/gallery-3.jpg" target="_blank" rel="noreferrer">
-            <img src="images/gallery-3.jpg" alt="Lights" />
-          </a>
-          <a class="shot" href="images/gallery-4.jpg" target="_blank" rel="noreferrer">
-            <img src="images/gallery-4.jpg" alt="Booth" />
-          </a>
-          <a class="shot" href="images/bevel2.JPG" target="_blank" rel="noreferrer">
-            <img src="images/bevel2.JPG" alt="Event" />
-          </a>
-          <a class="shot" href="images/molen.png" target="_blank" rel="noreferrer">
-            <img src="images/molen.png" alt="Club" />
-          </a>
-        </div>
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Foto’s</h2>
       </div>
-    </section>
+    </div>
+
+    <div class="gallery">
+      <a class="shot" href="images/setup.jpg">
+        <img class="shot-media" src="images/setup.jpg" alt="DJ setup" />
+      </a>
+
+      <a class="shot" href="images/crowd.JPG">
+        <img class="shot-media" src="images/crowd.JPG" alt="Crowd" />
+      </a>
+
+      <a class="shot" href="images/lights.MOV">
+        <video
+          class="shot-media"
+          src="images/lights.MOV"
+          autoplay
+          muted
+          loop
+          playsinline
+          disablepictureinpicture
+        ></video>
+      </a>
+
+      <a class="shot" href="images/passionele.jpg">
+        <img class="shot-media" src="images/passionele.jpg" alt="Booth" />
+      </a>
+
+      <a class="shot" href="images/bevel2.JPG">
+        <img class="shot-media" src="images/bevel2.JPG" alt="Event" />
+      </a>
+
+      <a class="shot" href="images/molen.png">
+        <img class="shot-media" src="images/molen.png" alt="Club" />
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <!-- CONTACT -->
     <section class="section" id="contact">
