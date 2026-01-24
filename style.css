@@ -666,3 +666,44 @@ input:focus, textarea:focus, select:focus{
   opacity: 1;
 }
 
+.about-grid{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;  /* tekst iets breder dan kaart */
+  gap: 48px;
+  align-items: start;
+}
+
+
+.about-text{
+  max-width: 680px;        /* 🔑 voorkomt ultra-brede regels */
+}
+
+.about-text p{
+  margin-top: 16px;
+  line-height: 1.65;      /* veel leesbaarder */
+  font-size: 1rem;        /* of 1.05rem als je wil */
+  color: rgba(255,255,255,0.85);
+}
+
+
+.about-text .section-title{
+  margin-bottom: 12px;
+}
+
+.about-card{
+  margin-top: 6px; /* kleine fine-tune */
+}
+
+@media (max-width: 900px){
+  .about-grid{
+    grid-template-columns: 1fr;
+  }
+  .about-card{
+    justify-self: start;
+    max-width: 100%;
+  }
+}
+
+
+
+
