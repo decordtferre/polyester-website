@@ -632,5 +632,15 @@ input:focus, textarea:focus, select:focus{
   border: none;
 }
 
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 48px;             /* match met je andere inputs */
+  padding: 12px 16px;
+  font-size: 16px;         /* iOS zoom fix */
+  line-height: 1.2;
+}
+
+
 
 
