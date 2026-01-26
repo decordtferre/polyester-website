@@ -80,7 +80,7 @@ code{ color: rgba(255,255,255,0.9); }
   z-index: 1000;
 
   backdrop-filter: blur(14px);
-  background: rgba(7,8,18,0.55);
+  background: rgba(7, 8, 18, 0.618);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -602,7 +602,7 @@ input:focus, textarea:focus, select:focus{
     gap: 8px;
     padding: 12px;
     border-radius: 16px;
-    background: rgba(7,8,18,0.75);
+    background: rgba(7, 8, 18, 0.982);
     backdrop-filter: blur(14px);
     border: 1px solid rgba(255,255,255,0.12);
     width: min(260px, calc(100% - 40px));
@@ -631,5 +631,6 @@ input:focus, textarea:focus, select:focus{
   display: block;
   border: none;
 }
+
 
 
