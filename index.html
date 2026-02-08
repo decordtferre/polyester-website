@@ -297,7 +297,7 @@
         <form class="form card" action="https://formsubmit.co/ferredecordt5002@gmail.com" method="POST">
           <!-- FormSubmit opties -->
           <input type="hidden" name="_subject" value="Boeking aanvraag – POL.YESTER" />
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_captcha" value="true" />
           <input type="hidden" name="_template" value="table" />
 
           <h3 class="card-title">Contactformulier</h3>
@@ -316,7 +316,18 @@
           <div class="row">
             <label>
               Datum
-              <input name="datum" type="date" required />
+              <input id = "datum" name="datum" type="date" required />
+              <script>
+                (function () {
+                  const el = document.getElementById('datum');
+                  if (!el) return;
+                  const today = new Date();
+                  const yyyy = today.getFullYear();
+                  const mm = String(today.getMonth() + 1).padStart(2, '0');
+                  const dd = String(today.getDate()).padStart(2, '0');
+                  el.min = `${yyyy}-${mm}-${dd}`; // formaat dat <input type="date"> verwacht
+                })();
+              </script>
             </label>
           </div>
 
